@@ -24,3 +24,11 @@
 -- import org.springframework.web.bind.annotation.RestController;
 -- @RestController
 -- public class SaludoController {
+
+# @GetMapping
+ // con que metodo y bajo que url queiero que se vea mi holaMundo
+ // se usara la anotacion GetMapping
+    @GetMapping("/saludo")
+    public String holaMundo () {
+        return "Hola Mundo!";
+    }
