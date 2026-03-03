@@ -16,3 +16,11 @@
 
 # Spring intializr
 <img width="1626" height="976" alt="image" src="https://github.com/user-attachments/assets/8416bbe4-2787-4682-9e85-bda2766dc4e8" />
+
+
+
+# Mapeo de class controller 
+- @RestController ya que estamos usando una API-Rest 
+-- import org.springframework.web.bind.annotation.RestController;
+-- @RestController
+-- public class SaludoController {
