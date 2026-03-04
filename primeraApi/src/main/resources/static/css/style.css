@@ -1,0 +1,58 @@
+/* --- RESET & BASE --- */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    background-color: #0f172a;
+    color: #cbd5e1;
+    font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+    line-height: 1.5;
+}
+
+/* --- LAYOUT UTILS --- */
+.max-w-6xl { max-width: 72rem; margin: 0 auto; }
+.mx-auto { margin-left: auto; margin-right: auto; }
+.px-6 { padding-left: 1.5rem; padding-right: 1.5rem; }
+.pt-20 { padding-top: 5rem; }
+.pb-32 { padding-bottom: 8rem; }
+.mb-32 { margin-bottom: 8rem; }
+.flex { display: flex; }
+.grid { display: grid; }
+.items-center { align-items: center; }
+.justify-between { justify-content: space-between; }
+.text-center { text-align: center; }
+.gap-12 { gap: 3rem; }
+.gap-6 { gap: 1.5rem; }
+.gap-4 { gap: 1rem; }
+
+@media (min-width: 768px) {
+    .md-grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .md-grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+    .md-flex { display: flex; }
+}
+
+/* --- DESIGN ELEMENTS --- */
+.text-white { color: #ffffff; }
+.text-indigo-400 { color: #818cf8; }
+.text-indigo-500 { color: #6366f1; }
+.text-slate-400 { color: #94a3b8; }
+.bg-slate-800 { background-color: #1e293b; }
+.bg-slate-800\/50 { background-color: rgba(30, 41, 59, 0.5); }
+.bg-slate-900\/50 { background-color: rgba(15, 23, 42, 0.5); }
+.border { border: 1px solid #334155; }
+.rounded-3xl { border-radius: 1.5rem; }
+.rounded-xl { border-radius: 0.75rem; }
+.p-8 { padding: 2rem; }
+.p-6 { padding: 1.5rem; }
+
+/* --- TYPOGRAPHY --- */
+.text-6xl { font-size: 3.75rem; font-weight: 800; }
+.font-mono { font-family: monospace; }
+.tracking-tight { letter-spacing: -0.025em; }
+
+/* --- ANIMATIONS & EFFECTS --- */
+@keyframes pulse { 50% { opacity: .5; } }
+.animate-pulse { animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite; }
+
+.backdrop-blur-sm { backdrop-filter: blur(4px); }
+.bg-gradient-to-r { background-image: linear-gradient(to right, #818cf8, #22d3ee); }
+.text-transparent { color: transparent; }
+.bg-clip-text { -webkit-background-clip: text; background-clip: text; }
